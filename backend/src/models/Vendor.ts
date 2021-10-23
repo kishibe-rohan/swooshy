@@ -2,9 +2,9 @@ import mongoose,{Schema,Document,Model} from 'mongoose'
 
 interface VendorDoc extends Document{
     name: string,
-    ownderName: string,
-    foodType : string,
-    pincode: string,
+    ownderName: string;
+    foodType : string;
+    pincode: string;
     address: string;
     phone: string;
     email: string;
@@ -13,7 +13,7 @@ interface VendorDoc extends Document{
     serviceAvailable: boolean;
     coverImages: [string];
     rating: number;
-    foods: any,
+    foods: any;
     lat: number;
     lng: number;
 }
